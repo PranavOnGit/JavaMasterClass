@@ -37,4 +37,5 @@ public class UserInput {
             System.out.println("\n Sum of all input is: "+sum);
         scanner.close();
     }
+
 }

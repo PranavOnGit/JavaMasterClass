@@ -1,4 +1,4 @@
-package OOP_Part_1;
+package OOP_Part_1.Class;
 
 //CLASS
 

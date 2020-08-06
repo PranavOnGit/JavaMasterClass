@@ -11,7 +11,7 @@ package OOP_part_2.Encapsulation;
 
 public class Printer {
     private int toneLevel;
-    private int numOfPagesPrinted;
+    private int  numOfPagesPrinted;
     private boolean duplex;
 
     //Constructor

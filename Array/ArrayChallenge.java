@@ -1,4 +1,5 @@
 package Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 // Create a program using arrays that sorts a list of integers in descending order.
@@ -18,7 +19,7 @@ public class ArrayChallenge {
     public static void main(String[] args) {
         int [] array = getIntegers(5);
         int [] sorted = sortIntegers(array);
-        System.out.println("\r Ascending Sorted elements are:");
+        System.out.println("Ascending Sorted elements are:");
         printArray(sorted);
     }
 
@@ -42,10 +43,14 @@ public class ArrayChallenge {
 
     //To Sort array
     public static int[] sortIntegers(int[] array){
-        int[] sortedArray  = new int[array.length];
-        for (int i= 0; i < array.length; i++){
-            sortedArray[i] = array[i];
-        }
+//        int[] sortedArray  = new int[array.length];
+//        for (int i= 0; i < array.length; i++){
+//            sortedArray[i] = array[i];
+//        }
+
+        //Makes Copy of the array (optional)
+        int[] sortedArray = Arrays.copyOf(array, array.length);
+
         boolean flag = true;
         int temp;
         while (flag){
